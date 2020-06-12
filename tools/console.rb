@@ -6,13 +6,20 @@ def reload
   load 'config/environment.rb'
 end
 
-# Insert code here to run before hitting the binding.pry
-# This is a convenient place to define variables and/or set up new object instances,
-# so they will be available to test and play around with in your console
+viewer1 = Viewer.new("that_one_guy")
+viewer2 = Viewer.new("btbacker")
+viewer3 = Viewer.new("thejoker2020")
+viewer4 = Viewer.new("livefromwakanda")
 
+movie1 = Movie.new("The Last Airbender")
+movie2 = Movie.new("1917")
+movie3 = Movie.new("Joker")
+movie4 = Movie.new("Black Panther")
 
-
-
+review1 = Review.new(viewer1, movie2, 5)
+review2 = Review.new(viewer1, movie3, 4.5)
+review3 = Review.new(viewer2, movie2, 4)
+review4 = Review.new(viewer4, movie4, 1)
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
 binding.pry
